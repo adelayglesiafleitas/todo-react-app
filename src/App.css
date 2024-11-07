@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  justify-content: center; /* Centra horizontalmente */
+}
+
+.todo_container {
+  width: 375px;
+  height: 730px;
+  display: flex;
+}
+.todo_section_container {
+  /*background-image: url(./assets/images/bg-mobile-light.jpg);
+  background-repeat: no-repeat;*/
+  width: 375px;
+  height: 730px;
+  position: relative;
+  padding: 10px;
+
+}
+.img_fondo {
+  top: 0; /* Alinea al principio */
+  left: 0; /* Alinea a la izquierda */
+  z-index: 0; /* Asegura que esté detrás de otros elementos */
+  position: absolute;
+}
+.todo_container input {
+  z-index: 1;
+  position: relative;
+  margin-left: 10px;
+}
+.nodata {
+  z-index: 1;
+  position: relative;
+}

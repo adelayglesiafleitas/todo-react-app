@@ -1,0 +1,38 @@
+.input_container {
+  width: 333px;
+  height: 48px;
+  background-color: var(--Very_Light_Gray);
+  z-index: 1;
+  position: relative;
+  margin-left: 13px;
+  margin-top: 35px;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.input_todo {
+  border: none;
+  color: var(--Dark_Grayish_Blue);
+  background-color: var(--Very_Light_Gray);
+}
+.input_todo:focus {
+  outline: none;
+}
+.icon_check_container {
+  background: rgb(85, 221, 255);
+  background: linear-gradient(
+    118deg,
+    rgba(85, 221, 255, 1) 0%,
+    rgba(192, 88, 243, 1) 80%
+  );
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 20px;
+  cursor: pointer;
+}

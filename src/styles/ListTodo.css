@@ -1,0 +1,70 @@
+.listTodo_list_container {
+  width: 333px;
+  height: 48px;
+  background-color: var(--Very_Light_Gray);
+  z-index: 1;
+  position: relative;
+  margin-left: 13px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  /*border-bottom: 1px solid var(--Light_Grayish_Blue);*/
+  padding: 15px;
+  box-shadow: 4px 22px 12px rgba(0, 0, 0, 0.1);
+}
+.final {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.listTodo_container {
+  z-index: 1;
+  position: relative;
+  margin-top: 23px;
+}
+
+.listTodo_container p {
+  border: none;
+  background-color: var(--Very_Light_Gray);
+  font-size: 13px;
+  margin-left: 13px;
+}
+.lineThrough {
+  text-decoration: line-through;
+  color: var(--Dark_Grayish_Blue);
+}
+.listTodo_container_group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.icon_list_check_container {
+  background: rgb(85, 221, 255);
+  background: linear-gradient(
+    118deg,
+    rgba(85, 221, 255, 1) 0%,
+    rgba(192, 88, 243, 1) 80%
+  );
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /*margin-left: 20px;*/
+  cursor: pointer;
+}
+.close {
+  margin-right: 12px;
+  cursor: pointer;
+}
+
+.clear_Complete,
+.lefts {
+  color: var(--Dark_Grayish_Blue);
+}
+
+.clear_Complete:hover {
+  color: var(--Bright_Blue);
+}
