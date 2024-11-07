@@ -68,3 +68,10 @@
 .clear_Complete:hover {
   color: var(--Bright_Blue);
 }
+
+@media (min-width: 1439px) {
+  .listTodo_list_container {
+    width: 540px;
+    height: 64px;
+  }
+}

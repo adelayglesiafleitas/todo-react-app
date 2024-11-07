@@ -36,3 +36,10 @@
   margin-left: 20px;
   cursor: pointer;
 }
+
+@media (min-width: 1439px) {
+  .input_container {
+    width: 540px;
+    height: 64px;
+  }
+}

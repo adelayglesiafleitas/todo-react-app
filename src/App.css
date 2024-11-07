@@ -17,7 +17,6 @@
   height: 730px;
   position: relative;
   padding: 10px;
-
 }
 .img_fondo {
   top: 0; /* Alinea al principio */
@@ -33,4 +32,21 @@
 .nodata {
   z-index: 1;
   position: relative;
+}
+@media (min-width: 1439px) {
+  
+  .todo_container {
+    width: 1440px;
+    height: auto;
+  }
+  .todo_section_container {
+    height: auto;
+    width: 1440px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .img_fondo {
+    left: auto;
+  }
 }

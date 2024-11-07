@@ -11,7 +11,7 @@ const InputTodo = ({ listObj, setListObj, darkMode, setDarkMode }) => {
       : !darkMode && checkInput
       ? "linear-gradient(118deg, rgba(85, 221, 255, 1) 0%, rgba(192, 88, 243, 1) 80%)"
       : !darkMode
-      ? "var(--Very_Light_Grayish_Blue)"
+      ? "var(--Very_Light_Gray)"
       : "";
 
   const borderColor = checkInput
@@ -45,7 +45,7 @@ const InputTodo = ({ listObj, setListObj, darkMode, setDarkMode }) => {
       style={{
         background: darkMode
           ? "var(--Very_Dark_Desaturated_Blue)"
-          : "var(--Very_Light_Grayish_Blue)",
+          : "var(--Very_Light_Gray)",
       }}
     >
       <div
@@ -53,7 +53,7 @@ const InputTodo = ({ listObj, setListObj, darkMode, setDarkMode }) => {
         style={{
           background: backgroundColor,
 
-          border: borderColor,
+          border: checkInput ? "none" : "1px solid var(--Dark_Grayish_Blue)",
         }}
         // Added onClick handler to toggle checkInput
         onClick={() => setCheckInput(!checkInput)} // Toggle checkInput state
@@ -71,7 +71,7 @@ const InputTodo = ({ listObj, setListObj, darkMode, setDarkMode }) => {
         style={{
           background: darkMode
             ? "var(--Very_Dark_Desaturated_Blue)"
-            : "var(--Very_Light_Grayish_Blue)",
+            : "var(--Very_Light_Gray)",
         }}
       />
     </div>

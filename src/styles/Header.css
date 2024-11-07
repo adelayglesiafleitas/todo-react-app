@@ -16,3 +16,14 @@
   cursor: pointer;
   transform: scale(1.1);
 }
+.header_container {
+  font-size: 20px;
+}
+@media (min-width: 1439px) {
+  .header_container {
+    gap: 330px;
+  }
+  .header_container {
+    font-size: 28px;
+  }
+}

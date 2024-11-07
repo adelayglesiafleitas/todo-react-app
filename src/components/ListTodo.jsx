@@ -3,9 +3,15 @@ import Close from "../assets/images/close.svg";
 import "../styles/ListTodo.css";
 import { useEffect, useState } from "react";
 
-const ListTodo = ({ listObj, setListObj, darkMode, setDarkMode }) => {
+const ListTodo = ({
+  listObj,
+  setListObj,
+  darkMode,
+  setDarkMode,
+  itemsLeft,
+  setItemsLeft,
+}) => {
   // Estado para contar los elementos seleccionados
-  const [itemsLeft, setItemsLeft] = useState(0);
 
   /***** Función para contar elementos seleccionados */
   const contLefts = () => {
@@ -104,7 +110,7 @@ const ListTodo = ({ listObj, setListObj, darkMode, setDarkMode }) => {
         </div>
       ))}
       <div
-        className="listTodo_list_container final"
+        className="listTodo_list_container final resposive_movil"
         style={{
           borderTopLeftRadius: "5px",
           borderTopRightRadius: "5px",

@@ -13,11 +13,13 @@
 }
 
 .Footer_container p,
-footer p {
+footer p,
+.Footer_containerResp {
   color: var(--Dark_Grayish_Blue);
 }
 
-.Footer_container p:hover {
+.Footer_container,
+.resposive_pc p:hover {
   color: var(--Bright_Blue);
 }
 footer {
@@ -31,4 +33,27 @@ footer {
 
 .Drag {
   font-size: 13px;
+}
+
+.Footer_containerResp {
+  display: flex;
+  gap: 15px;
+  cursor: pointer;
+}
+.resposive_pc {
+  visibility: hidden;
+}
+
+@media (min-width: 1439px) {
+  .Footer_container {
+    width: 540px;
+    height: 64px;
+  }
+  .resposive_movil {
+    visibility: hidden;
+  }
+  .resposive_pc {
+    visibility: visible;
+    transform: translateY(-217px);
+  }
 }
